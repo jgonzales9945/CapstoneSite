@@ -1,0 +1,197 @@
+/* 
+* Created on : Oct 28, 2017, 1:48:26 PM
+* authors: Joseph Gonzales, Abhi Koukutla, Stephen Maddux
+*
+* Name: WebsiteStyleSheet.css
+* Purpose: The purpose of this file is to maintain the appearance of the site, 
+* and to keep it looking presentable.
+*/
+
+body{
+	font-family: "Lato", sans-serif;
+	/*background-image: url("Images/Corpus_Christi_2691.jpg");*/
+        /*background-color: red;*/
+        /*background-repeat: no-repeat;*/
+        background-size: 150%;
+}
+
+.titleArea{
+	position: absolute;
+	/*padding: 6px 6px 6px 450px;*/
+        /*padding: 6px 6px 6px 6px;*/
+        z-index: 1;
+        top: 0;
+}
+
+#titleLogo img{
+    float: left;
+}
+
+#titleLogo h1{
+    margin-top: 0;
+    float: left;
+    color: #2963d8;
+}
+
+.titleImage{
+    position: absolute;
+    float: right;
+    left: 0;
+    z-index: 0;
+    top: 0;
+}
+
+div.tab{
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #2296E6;	
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	left: 0;
+    padding: 3px;
+    z-index: 2;
+}
+
+div.tab a{
+	background-color: inherit;
+        text-decoration: none;
+	color: white;
+	border: none;
+	outline: none;	
+	font-size: 12px;
+	padding: 6px 10px 6px 25px;
+	
+}
+
+div.tab a:hover{
+    color:black;
+}
+
+div.Notification{ /*This is responsible for the parameters of the notification tabs that pop up on site.*/
+	width: 250px;
+	background-color: #d02090;
+	border: 1px solid #ccc;
+	padding: 6px 6px 16px 32px;
+	margin-left: 500px;
+	margin-top: 130px;
+	position: absolute;
+        visibility:hidden;
+        
+}
+
+div.Notification a{ /*This sets the color of the notifications that you get on the website*/
+        text-decoration: none;
+        color: white;
+        
+}
+div.leftsidebar{
+	height: 100%;
+	width: 280px;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	background-color: #F4F1CF;
+	top: 136px;
+	padding-top: 6px;
+	overflow: auto;
+    padding-bottom: 60px;
+}
+
+
+div.leftsidebar a{
+	padding: 6px 6px 6px 3px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    position: relative;
+}
+
+div.leftsidebar a:hover{
+	color: #f1f1f1;
+}
+
+.Calendar{
+	padding-top: 5px;
+}
+
+div.mainContent{
+	margin-left: 270px;
+	padding: 16px;
+	position: absolute;
+	top: 136px;
+    width:76%;
+    /*height:100%;*/
+    background-color: white;
+    opacity:0.95;
+    padding-bottom: 60px;
+}
+
+div.mainContent img{ 
+    width:480px;
+    height:auto;
+}
+
+div.mainContent table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /*Sets the font for the mainContent table*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div.mainContent table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+div mainContent table tr:hover{
+    background-color: #ddd;
+}
+
+div mainContent table th{ /* Aligns the main content, and sets the background color.*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.CalendarBackground{ /*sets the background image and the size for the Calendar*/
+    background-image: url("Images/Corpus_Christi_2691.jpg");
+    background-size: 150%;
+}
+
+#imageGraphs{
+    float:right;
+}
+
+.loader {
+    visibility: hidden;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* This serves as the style template for the admin login. */
+.adminlogin{ 
+    background-color: green;  
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 3px 46px 3px 12px;
+    margin-left: 20px;
+    text-align: center;
+}

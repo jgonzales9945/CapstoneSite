@@ -1,0 +1,159 @@
+
+/* 
+* Created on: Oct 28, 2017, 6:55:48 PM
+* authors: Stephen Maddux, Joseph Gonzales, Abhi Koukutla
+*
+/
+/*******************************Calendar Top Navigation*********************************/
+
+/*
+* Name: calendar.css
+* Purpose: The purpose of this stylesheet is to make the calendar is to manage 
+* the appearance of the Calendar. Whether it be to determine the size of the 
+* tables, or what color they are.     
+*/
+#calendar{
+  margin:0px auto;
+  padding:130px;/*Sets the margins, font, and size of the Calendar to be displayed on the website*/
+  width: 80%; /*change to 80%*/
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+ 
+#calendar .box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color: blue;      
+}
+
+/** #787878**/
+#calendar .header{/*Header for Calendar, and sets the margins and size for it appropriately.*/
+    line-height:40px; 
+    vertical-align:middle;
+    position:absolute;
+    left:45px; /*change to 45px*/
+    top:0px;
+    width:90%; /*change to 90%*/
+    height:40px;   
+    text-align:center;
+}
+ 
+#calendar .header .prev,#calendar .header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+#calendar .header .title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+#calendar .header .prev{
+    left:0px;
+}
+ 
+#calendar .header .next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+/*This modifies the way that the content is displayed within the cells, whether it changes their size, or color, or etc. */
+#calendar .box-content{
+    border:1px solid #787878 ;
+    border-top:none;
+    background-color: #eae6e6;
+    opacity:0.9;
+}
+ 
+ 
+ /*Changes the appearace of the labels in the calendar*/
+#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 5px;
+    width: 100%;
+}
+ 
+#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;  
+    float:left;
+    list-style-type:none;
+    width:13.6%; /*change to 13.6%*/
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+}
+ 
+ 
+#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/** Days in the month **/
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;
+    margin-top: 5px;
+    line-height:20px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width:13.7%; /*change to 13.7%*/
+    height:150px; /*change to 150px*/
+    font-size:15px;
+    background-color: #fff;
+    color:#000;
+    text-align:center; 
+}
+
+div#calendar ul.dates li.this_today {
+    background-color: #CC6699;
+}
+
+/*Sets the size of the actual content that is entered into the calendar*/
+div.calendarContent{
+    font-size: 12px;
+    text-align: left;
+    margin-left: 2px;
+}
+
+div.calendarContent p{
+    /*border-radius: 9px;*/
+    border: 2px solid #212BAD;;
+    background: #FCFCFC;
+    margin: 5px 1px 1px 1px;
+}
+ 
+:focus{
+    outline:none;
+}
+ 
+div.clear{
+    clear:both;
+}

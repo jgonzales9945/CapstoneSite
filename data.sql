@@ -1,0 +1,10 @@
+INSERT INTO schools(name, information, file_directory) VALUES('Advanced Course Statistics','This table displays the percentage of kids across grades 9 through 12 who complete advanced or dual credit courses, and is categorized by school district and ethnicity. ', "resources/schools/2017-11-29-Advanced");
+INSERT INTO schools(name, information, file_directory) VALUES('Attendance Graduation and Dropout Rate','This table displays the attendace percentage, the graduation and the dropout rate in high school student. It is categorized by school district and ethnicity.', "resources/schools/2017-11-29-Attendance-graduation-and-dropout-rate/");
+INSERT INTO schools(name, information, file_directory) VALUES('AP/IB results','This table displays the results of AP/IB across numerous subjects, and is categorized by school district and ethnicity.',"resources/schools/2017-11-29-AP-IB-Results/");
+INSERT INTO schools(name, information, file_directory) VALUES('College Ready Graduates ELA','This table displays the percentage of college ready graduates from across districts. Also sorted by ethnicity.',"resources/schools/2017-11-29-College Ready Graduates ELA/" );
+INSERT INTO schools(name, information, file_directory) VALUES('Complete Student Population table and Distribution','This table displays the number of students in grades k-12, and is categorized by school district and ethnicity.', "resources/schools/2017-11-29-Complete-student-population-table/");
+INSERT INTO schools(name, information, file_directory) VALUES('SAT/ACT Score','This table displays the average SAT/ACT scores, and is categorized by school district and ethnicity.',"resources/schools/2017-11-29-SAT-ACT-Test-Results/" );
+
+insert into indexpage (index_title, index_info, file_links, hyper_links, date_modified) values ('title','test','resources/index/','w3schools.com','1/1/2000');
+insert into about (about_title, about_info, file_links, hyper_links, date_modified) values ('title','test','resources/about/','w3schools.com','1/1/2000')
+insert into login values('capstone2017', 'ThisIsNotOurPassword!', 'jgonzales43@ta.edu');
